@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#ecf0f1;
+}
+
+.first-container{
+    display: flex;
+    border-radius: 15px;
+}
+
+.social-media-list{
+    display: flex;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-container{
+    position: absolute;
+    display: none;
+}
+
+    

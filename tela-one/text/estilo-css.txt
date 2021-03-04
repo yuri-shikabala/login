@@ -1,0 +1,31 @@
+Nota: tendo dois containers(c2 e c3) menores, dentro do container mãe(c1).
+pretendemos: o containers(c2 e c3) fiquem horizontal(um á lado do outro ou seja uma só linha).
+
+examplo: <div class="c1">
+            <div class="c2">...</div>
+            <div class="c3">...</div>
+         </div>
+
+        usamos:
+        c1{
+            display:flex; - permite-nos pôr c2 e c3 uma só linha.
+            justify-content: center; - permite centralizar  no horizontal.
+            align-items: center;- permite centralizar  no vertical.
+            height:100vh; atribuindo uma altura para que propriedade: align-items: center; funcione. vh -> significa viewport.
+
+        }
+
+        A propriedade: box-sizing:border-box; ele pega altura e lagura relativo a container.
+
+        Nota: queremos sobrepôr dois container(c2 e c3) em cima do outro:
+        
+        examplo: <div class="c1">
+            <div class="c2">...</div>
+            <div class="c3">...</div>
+         </div>
+
+        usamos:
+        c1{
+            position: absolute; permite que fique sobreposto c2 à c3.
+            display: none; vai permite ficar sómente com container(c2), ou seja ele foca só c2
+        }
